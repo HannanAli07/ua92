@@ -1,0 +1,241 @@
+html, body{
+    margin: 0;
+    left: 0;
+    position: flex;
+
+  }
+
+  .btn {
+    width: 100px;
+    height: 40px;
+    border: 1px solid #ddd;
+    background-color: #32a852;
+    color: white;
+    line-height: -30px
+  }
+
+  select {
+    width: 150px;
+    height: 25px;
+
+  }
+  .navbar{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    top: 0;
+    left: 0;
+  }
+  #bar{
+    font-size: 2rem;
+    padding: 7px;
+    cursor: pointer;
+    font-size: 500;
+    transition: 0.3s ease;
+    color: rgb(0, 0, 0);
+  }
+  #bar:hover{
+    color: rgb(241, 8, 8);
+  }
+  @media only screen and (max-width: 991px) {
+    #navbarSupportedContent > ul{
+        margin: 1rem;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right;
+    }
+  
+    #navbarSupportedContent > ul > li:nth-child(n) > a{
+      padding: 20px 0;
+    }
+  }
+
+
+
+  /* Mobile Nav*/
+  .navbar-light .navbar-toggler{
+    border: 10px;
+    border-radius: 10px;
+    background-color: white;
+  }
+
+
+
+
+  .navbar-light .navbar-nav .nav-item {
+    padding: 0 20px;
+    color: rgb(247, 247, 247);
+    transition: 0.3s ease;
+  }
+
+  .navbar-light .navbar-nav .nav-item::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: rgb(241, 8, 8);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .navbar-light .navbar-nav .nav-item:hover:after{
+    width: 100%;
+  }
+  .navbar-light .navbar-nav .nav-item .nav-link{
+    color: rgb(246, 246, 246);
+  }
+
+
+  .navbar-light .navbar-nav .nav-item .nav-link:hover,
+  .navbar-light .navbar-nav .nav-item .nav-link.active{
+    color: rgb(241, 8, 8);
+  }
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  table th {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #07053a;
+    color: #fff;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  table td {
+    font-size: 16px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  table th:first-child,
+  table td:first-child {
+    width: 275px;
+  }
+  
+  table th:nth-child(2),
+  table td:nth-child(2) {
+    width: 275px;
+  }
+  
+  table th:nth-child(3),
+  table td:nth-child(3) {
+    width: 275px;
+  }
+  
+  table th:nth-child(4),
+  table td:nth-child(4) {
+    width: 275px;
+  }
+  
+  table th:nth-child(5),
+  table td:nth-child(5) {
+    width: 275px;
+  }
+  
+  table th:last-child,
+  table td:last-child {
+    width: 275px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+  }
+  
+  label {
+    margin-top: 10px;
+  }
+  
+  input[type="text"] {
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 300px;
+  }
+  
+  input[type="text"][name="Parent_address"] {
+    height: 100px;
+    width: 500px;
+  }
+  
+  .btn {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: #e80101;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /*footer*/
+  footer{
+    background-color: black;
+  }
+  footer h4{
+    text-decoration: underline;
+    color: white;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+  }
+  footer h6{
+    color: white;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  footer li{
+    padding-bottom: 4px;
+  }
+  footer li a{
+    font-size: 0.8rem;
+    color: antiquewhite;
+  }
+  footer li a:hover{
+    font-size: 0.8rem;
+    color: red;
+  }
+  footer p{
+    color: antiquewhite;
+    font-size: 0.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  footer .copyright a{
+    color: black;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    margin: 0 5px;
+    float: right;
+  }
+  footer .copyright a:hover{
+    color: #fff;
+    background-color: #fb774b;
+  }

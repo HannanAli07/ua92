@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&family=Roboto+Slab:wght@500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*Navbar*/
+.navbar{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    top: 0;
+    left: 0;
+}
+#bar{
+    font-size: 2rem;
+    padding: 7px;
+    cursor: pointer;
+    font-size: 500;
+    transition: 0.3s ease;
+    color: rgb(0, 0, 0);
+}
+ #bar:hover{
+    color: rgb(241, 8, 8);
+}
+@media only screen and (max-width: 991px) {
+    #navbarSupportedContent > ul{
+        margin: 1rem;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right;
+    }
+    
+    #navbarSupportedContent > ul > li:nth-child(n) > a{
+        padding: 20px 0;
+    }
+}
+
+
+
+/* Mobile Nav*/
+.navbar-light .navbar-toggler{
+    border: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+
+
+.navbar-light .navbar-nav .nav-item {
+    padding: 0 20px;
+    color: rgb(247, 247, 247);
+    transition: 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-item::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: rgb(241, 8, 8);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navbar-light .navbar-nav .nav-item:hover:after{
+    width: 100%;
+}
+.navbar-light .navbar-nav .nav-item .nav-link{
+    color: rgb(246, 246, 246);
+}
+
+
+.navbar-light .navbar-nav .nav-item .nav-link:hover,
+.navbar-light .navbar-nav .nav-item .nav-link.active{
+    color: rgb(241, 8, 8);
+}
+
+/*Home page*/
+#home span{
+    color: rgb(219, 7, 7);
+}
+#home{
+    background-image: url(background.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+button{
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    background-color: rgb(0, 0, 0); 
+    color: rgb(228, 41, 12);
+    padding: 13px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease
+}
+.text-container button{
+    text-decoration: none;
+    padding: 12px;
+    border: 5px solid black;
+    margin-top: 30px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+.container hr{
+    width: 80px;
+    height: 10px;
+    background-color: rgb(3, 3, 3);
+    font-weight: 800;
+}
+.container h3{
+    font-weight: 900;
+    color: brown;
+}
+.container p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+
+/*footer*/
+footer{
+    background-color: black;
+}
+footer h4{
+    text-decoration: underline;
+    color: white;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+}
+footer h6{
+    color: white;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer li{
+    padding-bottom: 4px;
+}
+footer li a{
+    font-size: 0.8rem;
+    color: antiquewhite;
+}
+footer li a:hover{
+    font-size: 0.8rem;
+    color: red;
+}
+footer p{
+    color: antiquewhite;
+    font-size: 0.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer .copyright a{
+    color: black;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    margin: 0 5px;
+    float: right;
+}
+footer .copyright a:hover{
+    color: #fff;
+    background-color: #fb774b;
+}
+
+
+
+@media (max-width:1000px){
+    .content {
+        width: 45%;
+    }
+}
+@media (max-width:1500px){
+    .content {
+        width: 100%;
+    }
+}

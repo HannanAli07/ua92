@@ -1,0 +1,266 @@
+html, body{
+    margin: 0;
+    left: 0;
+    position: flex;
+
+}
+
+.btn {
+  width: 100px;
+  height: 40px;
+  border: 1px solid #ddd;
+  background-color: #ef3005;
+  color: rgb(1, 1, 1);
+  line-height: -30px
+}
+
+select {
+  width: 150px;
+  height: 25px;
+
+}
+.navbar{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    top: 0;
+    left: 0;
+}
+#bar{
+    font-size: 2rem;
+    padding: 7px;
+    cursor: pointer;
+    font-size: 500;
+    transition: 0.3s ease;
+    color: rgb(0, 0, 0);
+}
+#bar:hover{
+    color: rgb(241, 8, 8);
+}
+@media only screen and (max-width: 991px) {
+    #navbarSupportedContent > ul{
+        margin: 1rem;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right;
+    }
+
+    #navbarSupportedContent > ul > li:nth-child(n) > a{
+        padding: 20px 0;
+    }
+}
+
+
+
+/* Mobile Nav*/
+.navbar-light .navbar-toggler{
+    border: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+
+
+.navbar-light .navbar-nav .nav-item {
+    padding: 0 20px;
+    color: rgb(247, 247, 247);
+    transition: 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-item::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: rgb(241, 8, 8);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navbar-light .navbar-nav .nav-item:hover:after{
+    width: 100%;
+}
+.navbar-light .navbar-nav .nav-item .nav-link{
+    color: rgb(246, 246, 246);
+}
+
+
+.navbar-light .navbar-nav .nav-item .nav-link:hover,
+.navbar-light .navbar-nav .nav-item .nav-link.active{   
+color: rgb(241, 8, 8);
+}
+table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+th {
+    font-size: 20px;
+    background-color: #dddddd;
+    text-align: left;
+    padding: 8px;
+    font-weight: bold;
+}
+td {
+    font-size: 16px;
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+form {
+    margin: 0 auto;
+    max-width: 600px;
+}
+  
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+  
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+  
+input[type="submit"]:hover {
+    background-color: #0894e4;
+}
+  
+.btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: rgb(243, 82, 8);
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+  
+.btn:hover {
+    background-color: #3b09ed;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  label {
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .btn:hover {
+    background-color: #3e8e41;
+  }
+/*footer*/
+footer{
+  background-color: black;
+}
+footer h4{
+  text-decoration: underline;
+  color: white;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.3rem;
+}
+footer h6{
+  color: white;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer li{
+  padding-bottom: 4px;
+}
+footer li a{
+  font-size: 0.8rem;
+  color: antiquewhite;
+}
+footer li a:hover{
+  font-size: 0.8rem;
+  color: red;
+}
+footer p{
+  color: antiquewhite;
+  font-size: 0.8rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer .copyright a{
+  color: black;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  margin: 0 5px;
+  float: right;
+}
+footer .copyright a:hover{
+  color: #fff;
+  background-color: #fb774b;
+}
